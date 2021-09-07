@@ -70,8 +70,7 @@ body {
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
-
-.bxs-circle { /* tive que fazer uma gambiarra :( */
+.bxs-circle { /* rive que importar o icon circle de outra bilioteca */ 
     padding-right: 8px;
     font-size: 12px;
     color: var(--first-color);
@@ -81,6 +80,16 @@ body {
     font-size: 4rem;
     color: var(--first-color);
 }
+.icons__services {
+    margin-bottom: 1.625rem;
+    font-size: 3rem;
+    color: var(--icon-color);
+}
+
+.box .icon-logistic {
+    color: hsla(358, 87%, 55%, 1);
+}
+
 
 /* ==== LAYOUT === */
 #header {
@@ -248,4 +257,44 @@ body {
 .about__square img + img {
     display: block;
     padding-top: 3.875rem;
+}
+
+/* services */ 
+#our-services {
+    padding: 6.125rem 0 ;
+    background-color: var(--section-background-color);
+}
+
+.services {
+    text-align: center;
+    color: hsl(358, 87%, 55%);
+    margin-bottom: 2.75rem;
+}
+
+.container__boxs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+
+.box {
+    width: 18.75rem;
+    height: 19rem;
+    margin-top:1.25rem;
+    padding: 3.25rem .5rem 3.25rem 1.625rem;
+    box-shadow: 0px 3px 20px rgba(90, 194, 243, 0.1);
+    color: var(--font-color-subtile); 
+    background-color: #ffff;
+}
+
+.box h3 {
+    padding: 1.625rem 0rem .5rem 0rem;
+    font-weight: 500;
+}
+
+.box p {
+    font-size: var(--paragraph-second-font-size);
+    line-height: 27px;
+    color: var(--font-color-paragraph);       
 }
