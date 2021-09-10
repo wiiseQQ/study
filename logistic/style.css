@@ -418,9 +418,68 @@ body {
 }
 
 /* Recent Project */
+.container__project {
+    margin-bottom: 5.375rem;
+}
 
 .project {
     margin-top: 1.625rem;
+    margin-bottom: 2rem;   
+}
+
+.title-center {
     text-align: center;
     color: var(--first-color);
+}
+
+.boxs-section-recent {
+    position: relative;
+    box-shadow: 0px 3px 20px rgba(34, 52, 61, 0.15);
+}
+
+.boxs-section-recent img {
+    width: 100%;
+}
+.tag {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 6px 20px;
+    font-size: 13px;
+    font-weight: 300;
+    color: #fff;
+}
+
+.tag-box-1 {
+    background-color: hsla(31, 100%, 61%, 1);
+}
+
+.tag-box-2 {
+    background-color: hsla(194, 78%, 58%, 1);
+}
+
+.tag-box-3 {
+    background-color: hsla(7, 100%, 66%, 1);
+}
+
+.subtitle-wrapper {
+    padding: 25px 0px 0px 28px;
+    height: 70px;
+    background-color: #fff;
+    box-shadow: 0px 3px 20px rgba(34, 52, 61, 0.15);
+}
+
+.subtitle-wrapper h3 {
+    font-family: var(--title-font);
+    font-size: 18px;
+    font-weight: 500;
+    color: hsla(216, 26%, 41%, 1);
+}
+
+/* Our-Team */ 
+.boxs-our-team {
+    width: 18.75rem;
+    height: 26.625rem;
+    box-shadow: 0px 3px 20px rgba(90, 194, 243, 0.1);
+    background-color: #fff;
 }
