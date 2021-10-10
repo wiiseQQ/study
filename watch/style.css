@@ -1,4 +1,5 @@
 /* === RESET === */
+
 * {
     padding: 0;
     margin: 0;
@@ -22,49 +23,51 @@ a {
     text-decoration: none;
 }
 
-img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-}
-
 /* === VARIABLES === */
 :root {
+    --header-height: 7.2rem;
     /* fonts */
     --font-title: 'Roboto', sans-serif, serif;
-    --font-paragraph: 'DM Sans',  sans-serif, serif;
+    --font-paragraph: 'DM Sans', sans-serif, serif;
     --font-alternative: 'Montserrat', sans-serif, serif;
-
-    /* colors */ 
+    /* colors */
     --primary-color: #5567EE;
     --section-color: #F9F9F9;
-
 }
+
 
 /* === DEFAULT === */
-.bd-grid {
-    width: 100%;
-    max-width: 1024px;
-    margin:auto;
+.bd-grid {  
+    max-width: 1024px; 
+    width:  100%; 
+    margin: auto; 
 }
+
+section {
+    padding: calc(6rem + var(--header-height)) 0;
+}
+
 
 /* === HEADER === */
 #header {
-    width: 100%;
     position: fixed;
     top: 0;
     left: 0;
+    width: 100%;
     padding: 2rem 0;
     border-bottom: 1px solid #E5E5E5;
-    background: #fff;
+    background-color: #fff;
     z-index: 1000;
+    margin-bottom: 3rem;
 }
 
+/* === NAVEGATION === */
 .nav__container {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
+
 }
 
 .logo .icon-logo {
@@ -117,27 +120,27 @@ label span {
 }
 
 label span:nth-child(1) {
-    top: 0;    
+    top: 0;
 }
 
 label span:nth-child(2) {
-    top: 8px;    
+    top: 8px;
 }
 
 label span:nth-child(3) {
-    top: 16px;   
+    top: 16px;
 }
 
-#checkbox-menu:checked + label span:nth-child(1) {
+#checkbox-menu:checked+label span:nth-child(1) {
     transform: rotate(-45deg);
     top: 8px;
 }
 
-#checkbox-menu:checked + label span:nth-child(2) {
+#checkbox-menu:checked+label span:nth-child(2) {
     opacity: 0;
 }
 
-#checkbox-menu:checked + label span:nth-child(3) {
+#checkbox-menu:checked+label span:nth-child(3) {
     transform: rotate(45deg);
     top: 8px;
 }
@@ -151,40 +154,47 @@ label span:nth-child(3) {
     cursor: pointer;
 }
 
-/* === HOME === */ 
-#home {
-    margin: 12rem 0;
-}
-
+/* === HOME === */
 .home__container {
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
+}
+
+.img__home {
+    flex: 1 1 6rem;
 }
 
 .home__content h1 {
-    font-size: 5rem;
-    font-weight: 700;
-    line-height: 6.7rem;
+    font-size: 4.8rem;
 }
 
 .home__content p {
     font-family: var(--font-paragraph);
-    font-size: 2.4rem;
-    line-height: 3.6rem;
-
+    font-size: 2rem;
+    padding: 1.2rem 0;
 }
 
-/* .home__img {
-    flex: 1 1 80rem;
-} */
+.home__content {
+    flex: 1 1 6rem;
+}
 
-.btn-wrapper {
-    display: block;
+.img__home img {
+    width: 80%;
+    animation: float 4s linear infinite;
+}
+
+/* === IMAGE ANIMATION === */
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0rem);
+    }
+    50%{
+        transform: translateY(2rem);
+    }
 }
 
 .btn-home {
-    display: block;
     height: 4rem;
     padding: 0 3rem;
 
@@ -197,19 +207,18 @@ label span:nth-child(3) {
     font-size: 1.4rem;
     font-weight: bold;
 
+    box-shadow: 8px 11px 40px 0px rgba(85, 103, 238, 0.4);
     color: #fff;
     background: var(--primary-color);
 }
 
-/* === Media Queries === */ 
-
-@media (max-width:1024px) {
-    
+/* === Media Queries === */
+/* === 769px / 1024px === */
+@media (max-width:769px) and (max-width:1024px) {
     /* === Menu === */
     .nav__container {
         padding: 0 1.5rem;
     }
-
     .nav__menu {
         position: fixed;
         top: 77px;
@@ -229,10 +238,9 @@ label span:nth-child(3) {
         margin: 20px 0px;
     }
 
-    .logo  {
+    .logo {
         order: 2;
     }
-
     .nav__container .burger-wrapper {
         display: flex;
         order: 1;
@@ -245,31 +253,21 @@ label span:nth-child(3) {
     /* === show menu ===*/
     .show {
         left: 0;
-    }
-
-
-    /* === home === */ 
-    .home {
-        padding: 0 1.5rem;
-    }
+    } 
+    
+    /* === home === */
     .home__container {
         flex-direction: column;
         text-align: center;
-        justify-items: center;
+        padding: 0 1.5rem;
     }
 
-    .home__content h1 {
-        font-size: 3rem;
-        line-height: 3.1rem;
+    .home__content {
+        order: 2;
     }
 
-    .home__content p {
-        font-size: 1.4rem;
-        line-height: 1.8rem;
-        padding: 1rem 0;
+    .img__home {
+        order: 1;
     }
 
-    .btn-home {
-        margin: auto;
-    }
 }

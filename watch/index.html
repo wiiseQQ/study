@@ -1,65 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Styles -->
-    <link rel="stylesheet" href="style.css">
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Montserrat:wght@200;400;500;700&family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet">
-    <!-- Icons -->
-    <link rel="stylesheet" href="assets/fonts/style.css">
-    <title>Watchs-Buy</title>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- Styles -->
+   <link rel="stylesheet" href="style.css">
+   <!-- Fonts -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Montserrat:wght@200;400;500;700&family=Roboto:wght@100;300;400;700&display=swap"
+      rel="stylesheet">
+   <!-- Icons -->
+   <link rel="stylesheet" href="assets/fonts/style.css">
+   <title>Watchs-Buy</title>
 </head>
+
 <body>
-    <!-- Header -->
-    <header id="header">
-        <nav class="nav__container bd-grid">
-            <div class="logo">
-                <i class="icon-logo"></i>
-            </div>
-            <div class="nav__menu" id="nav-menu">
-                <ul class="nav__list ">
-                    <li class="menu__item"><a href="#home" class="menu__link">HOME</a></li>
-                    <li class="menu__item"><a href="#about" class="menu__link">ABOUT</a></li>
-                    <li class="menu__item"><a href="#product" class="menu__link">PRODUCT</a></li>
-                    <li class="menu__item"><a href="#feature" class="menu__link">FEATURE</a></li>
-                    <li class="menu__item"><a href="#contact" class="menu__link">CONTACT</a></li>
-                </ul>                
-            </div>
-            <div class='burger-wrapper' >
-                <input type="checkbox" id="checkbox-menu">
+   <!-- Header -->
+   <header id="header">
+      <!-- Menu -->
+      <nav class="nav__container bd-grid">
+         <div class="logo">
+            <i class="icon-logo"></i>
+         </div>
+         <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list ">
+               <li class="menu__item"><a href="#home" class="menu__link">HOME</a></li>
+               <li class="menu__item"><a href="#about" class="menu__link">ABOUT</a></li>
+               <li class="menu__item"><a href="#product" class="menu__link">PRODUCT</a></li>
+               <li class="menu__item"><a href="#feature" class="menu__link">FEATURE</a></li>
+               <li class="menu__item"><a href="#contact" class="menu__link">CONTACT</a></li>
+            </ul>
+         </div>
+         <div class='burger-wrapper'>
+            <input type="checkbox" id="checkbox-menu">
 
-                <label for="checkbox-menu" id="nav-toggle">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </label>
-            </div>
-            <div class="toggle icon-cart"></div>
-        </nav>
-    </header>
-    <main>
-        <section id="home" class="home">
-            <div class="home bd-grid">
-                <div class="home__container">
-                    <div class="home__content">
-                        <h1>The Future of Tech<br>
-                        is here.</h1>
-                        <p>Holisticly incentivize revolutionary collaboration and idea sharing before cost effective users.</p>
-                    </div>
-                    <div class="home__img">
-                        <img src="assets/img/watch-home.png" alt="">
-                    </div>
-                </div>
-                <button class="btn-home">Buy Now</button>
-            </div>
-        </section>
-    </main>
+            <label for="checkbox-menu" id="nav-toggle">
+               <span></span>
+               <span></span>
+               <span></span>
+            </label>
+         </div>
+         <div class="toggle icon-cart"></div>
+      </nav>
+   </header>
 
-    <script src="main.js"></script>
+   <main>
+      <!-- HOME -->
+      <section id="home">
+         <div class="home__container bd-grid">
+            <div class="home__content">
+               <h1>The future of tech
+                  is here.</h1>
+               <p>Holisticly incentivize revolutionary
+                  collaboration
+                  and idea sharing
+                  before cost effective users.</p>
+                  <button class="btn-home">Buy Now</button>
+            </div>
+            <div class="img__home">
+               <img src="assets/img/watch-home.png" alt="">
+            </div>
+         </div>
+      </section>
+   </main>
+
+   <script src="main.js"></script>
 </body>
+
 </html>

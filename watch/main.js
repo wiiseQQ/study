@@ -8,5 +8,13 @@ const showMenu = (toggleId, navId) =>{
         })
     }
 }
-
 showMenu('nav-toggle', 'nav-menu')
+
+
+const navLink = document.querySelectorAll('.menu__link')
+function linkAction() {
+    //remove menu mobile
+    const navMenu = document.getElementById('nav-menu')
+    navMenu.classList.remove('show')
+}
+navLink.forEach(n => n.addEventListener('click', linkAction))
